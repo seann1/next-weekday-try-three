@@ -25,6 +25,20 @@ weekday = function(day) {
         alert("Please enter a day of the week");
       };
 
+  for (var i = 0; i < 50 ; i++) {
+    todayParse = todayParse + 86400000;
+    console.log(todayParse);
+
+    var newDate = new Date(todayParse);
+    console.log(new Date(todayParse).getDay());
+    if (new Date(todayParse).getDay() === dayNumber) {
+
+      newDate = [dayInput, newDate.getMonth() + 1, newDate.getDate(), newDate.getYear() + 1900]
+      return newDate
+      } 
+    };
+
+
 };
 
 
