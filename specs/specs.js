@@ -9,7 +9,7 @@ describe("weekday", function() {
   		weekday("tuesday").should.eql(["tuesday", 7, 22, 2014]);
   });
   it ("returns an alert if user does not enter a day of the week", function () {
-  	weekday("ldjks").should.equal(undefined);
+  	weekday("alkjf").should.equal(undefined);
   });
 });
 
